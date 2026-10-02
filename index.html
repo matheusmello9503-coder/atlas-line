@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR" data-tema="claro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Atlas Line</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%232c6df0%22/><text x=%2250%22 y=%2266%22 font-size=%2244%22 font-family=%22monospace%22 font-weight=%22700%22 fill=%22white%22 text-anchor=%22middle%22>AL</text></svg>">
+<script>
+  /* Aplica tema e fonte guardados neste aparelho antes de desenhar a página */
+  try {
+    var t = localStorage.getItem("atlasline.tema");
+    if (t === "escuro" || t === "claro") document.documentElement.setAttribute("data-tema", t);
+    var f = localStorage.getItem("atlasline.fonte");
+    if (f && f !== "outfit") document.documentElement.setAttribute("data-fonte", f);
+  } catch (e) {}
+</script>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+<div id="app"></div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
